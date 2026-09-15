@@ -66,3 +66,19 @@ print(frase)
 nova_frase = frase.replace("JavaScript", "Python")
 
 print(nova_frase)
+
+# Encontrar parte de um texto
+texto = "Onde está minha chave?"
+
+posicao = texto.find("chave")
+
+print(f"A posição é {posicao}")
+
+posicao2 = texto.find("key")
+
+print(f"A posição é {posicao2}")
+
+# valor de -1 fazer a logica do sistema
+
+if posicao2 == -1:
+    print("Palavra não encontrada")
