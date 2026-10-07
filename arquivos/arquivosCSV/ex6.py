@@ -9,3 +9,8 @@ with open(notasCaminho, "a", newline="", encoding="utf-8") as arquivo:
     registro = csv.writer(arquivo)
     registro.writerow([aluno, nota])
 print("Registro realizado com sucesso!")
+
+with open(notasCaminho, "r", encoding="utf-8") as arquivo:
+    registro = csv.reader(arquivo)
+    for linha in registro:
+        print(linha)
